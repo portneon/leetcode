@@ -12,7 +12,7 @@ class Solution:
 
                 for e in dis:
                     if 0 <= b + e[0] < m and 0 <= d + e[1] < n:
-                        # 活细胞变死细胞的也算曾经的活细胞
+
                         if board[b + e[0]][d + e[1]] == 1 or board[b + e[0]][d + e[1]] == 2:
                             alive += 1
                 if alive >= 2 and alive <= 3 and board[b][d] == 1:
